@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>projects</title>
+<title>services</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -10,8 +10,6 @@
 
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
-<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/isotope.css" type="text/css" media="screen">   
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 
 <script type="text/javascript" src="js/jquery.js"></script>  
@@ -19,9 +17,6 @@
 <script type="text/javascript" src="js/superfish.js"></script>
 
 <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
-
-<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
 <script>
 $(document).ready(function() {	
 	//
@@ -30,36 +25,7 @@ $(document).ready(function() {
 
 }); //
 $(window).load(function() {
-	// isotop
-	var $container = $('#isotope-items'),
-		$optionSet = $('#isotope-options'), 
-	    $optionSets = $('#isotope-filters'), 
-	    $optionLinks = $optionSets.find('a'); 
-    $container.isotope({ 
-        filter: '*',
-        layoutMode: 'fitRows'
-    });  
-   	$optionLinks.click(function(){ 
-   		var $this = $(this); 
-    	// don't proceed if already selected 
-		if ( $this.hasClass('selected') ) { 
-			return false; 
-		}    		
-   		$optionSet.find('.selected').removeClass('selected'); 
-   		$this.addClass('selected');
-
-        var selector = $(this).attr('data-filter'); 
-        $container.isotope({ 
-            filter: selector            
-        }); 
-      	return false; 
-    });    	
-	$(window).on("resize", function( event ) {	
-		$container.isotope('reLayout');		
-	});		
-
-	// touchTouch
-	$('.thumb-isotope .thumbnail a').touchTouch();
+	//
 
 }); //
 </script>		
@@ -96,10 +62,10 @@ $(window).load(function() {
       <li><a href="index-1.html">About Us</a></li>
 				<li class="sub-menu sub-menu-1"><a href="index-2.html">Products</a>
 					<ul>
-						<li><a href="404.html">404 page not found</a></li>
+						<li><a href="index-2.html">what we offer</a></li>
 						<li class="sub-menu sub-menu-2"><a href="index-2.html">specials</a>
 							<ul>
-								<li><a href="404.html">404 page not found</a></li>
+								<li><a href="index-2.html">lorem ipsum dolor</a></li>
 								<li><a href="index-2.html">sit amet</a></li>
 								<li><a href="index-2.html">adipiscing elit</a></li>
 								<li><a href="index-2.html">nunc suscipit</a></li>
@@ -111,13 +77,13 @@ $(window).load(function() {
 								<li><a href="index-2.html">lorem ipsum dolor</a></li>
 								<li><a href="index-2.html">sit amet</a></li>
 								<li><a href="index-2.html">adipiscing elit</a></li>
-								<li><a href="index-2.html">nunc suscipit</a></li>
+								<li><a href="index-2.html">nunc suscipit</a></li>									
 							</ul>
-						</li>
-					</ul>
+						</li>						
+					</ul>						
 				</li>
-				<li><a href="index-3.html">Services</a></li>
-				<li class="active"><a href="index-4.html">Projects</a></li>
+				<li class="active"><a href="index-3.html">Services</a></li>
+				<li><a href="index-4.html">Projects</a></li>
 				<li><a href="index-5.html">Contacts</a></li>											
     </ul>
 		</div>
@@ -128,11 +94,12 @@ $(window).load(function() {
 </div>	
 </div>	
 </div>
+
 <div class="breadcrumbs1">
 <div class="container">
 <div class="row">
 <div class="span12">
-<div class="breadcrumbs1_inner"><a href="index.html">home page</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;projects</div>	
+<div class="breadcrumbs1_inner"><a href="index.html">home page</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;services</div>	
 </div>	
 </div>	
 </div>	
@@ -141,193 +108,146 @@ $(window).load(function() {
 <div id="content">
 <div class="container">
 <div class="row">
-<div class="span12">
+<div class="span9">
 	
-<h1>projects</h1>
+<h1>Services  overview</h1>
+
+<ul class="thumbnails thumbnails1">
+	<li>
+		<div class="thumbnail clearfix">
+			<figure class=""><img src="http://via.placeholder.com/140x138" alt=""></figure>
+			<div class="caption">											
+				<h3>Lorem ipsum dones consectetur </h3>
+				<p>
+					Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt  dolore magna. Ipsum dolor sit <a href="#"><strong>read more</strong></a>
+				</p>
+			</div>			
+		</div>
+	</li>
+	<li>
+		<div class="thumbnail clearfix">
+			<figure class=""><img src="http://via.placeholder.com/140x138" alt=""></figure>
+			<div class="caption">											
+				<h3>Lorem ipsum dones consectetur </h3>
+				<p>
+					Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt  dolore magna. Ipsum dolor sit <a href="#"><strong>read more</strong></a>
+				</p>
+			</div>			
+		</div>
+	</li>				
+</ul>
+
+<ul class="thumbnails thumbnails1">
+	<li>
+		<div class="thumbnail clearfix">
+			<figure class=""><img src="http://via.placeholder.com/140x138" alt=""></figure>
+			<div class="caption">											
+				<h3>Lorem ipsum dones consectetur </h3>
+				<p>
+					Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt  dolore magna. Ipsum dolor sit <a href="#"><strong>read more</strong></a>
+				</p>
+			</div>			
+		</div>
+	</li>
+	<li>
+		<div class="thumbnail clearfix">
+			<figure class=""><img src="http://via.placeholder.com/140x138" alt=""></figure>
+			<div class="caption">											
+				<h3>Lorem ipsum dones consectetur </h3>
+				<p>
+					Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt  dolore magna. Ipsum dolor sit <a href="#"><strong>read more</strong></a>
+				</p>
+			</div>			
+		</div>
+	</li>				
+</ul>
+<ul class="thumbnails thumbnails1">
+	<li>
+		<div class="thumbnail clearfix">
+			<figure class=""><img src="http://via.placeholder.com/140x138" alt=""></figure>
+			<div class="caption">											
+				<h3>Lorem ipsum dones consectetur </h3>
+				<p>
+					Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt  dolore magna. Ipsum dolor sit <a href="#"><strong>read more</strong></a>
+				</p>
+			</div>			
+		</div>
+	</li>
+	<li>
+		<div class="thumbnail clearfix">
+			<figure class=""><img src="http://via.placeholder.com/140x138" alt=""></figure>
+			<div class="caption">											
+				<h3>Lorem ipsum dones consectetur </h3>
+				<p>
+					Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt  dolore magna. Ipsum dolor sit <a href="#"><strong>read more</strong></a>
+				</p>
+			</div>			
+		</div>
+	</li>				
+</ul>
 
 
-<div id="isotope-options">
-    <ul id="isotope-filters" class="clearfix">
-        <li><a href="#" class="selected" data-filter="*">Show All</a></li> 
-        <li><a href="#" data-filter=".isotope-filter1">Category 1</a></li> 
-        <li><a href="#" data-filter=".isotope-filter2">Category 2</a></li> 
-        <li><a href="#" data-filter=".isotope-filter3">Category 3</a></li> 	             
-    </ul>            
+
+
+
+</div>
+<div class="span3">
+
+<h2>services List</h2>
+
+	<ul class="ul1">
+	  <li><a href="#">Quisque nullatibulum libero</a></li>
+	  <li><a href="#">Scelerisque eget, malesuada at</a></li>
+	  <li><a href="#">Vivamus eget niiam cursus leo</a></li>
+	  <li><a href="#">Nulla facilisinean nec eros</a></li>
+	  <li><a href="#">Vestibulum ante ipsum</a></li>	
+	  <li><a href="#">Quisque nullatibulum libero</a></li>
+	  <li><a href="#">Scelerisque eget, malesuada at</a></li>
+	  <li><a href="#">Vivamus eget niiam cursus leo</a></li>
+	  <li><a href="#">Nulla facilisinean nec eros</a></li>
+	  <li><a href="#">Vestibulum ante ipsum</a></li>	  	            		      	      			      
+	</ul>	
+
+	
+
+	
+</div>	
+</div>
+<div class="row">
+<div class="span12">
+
+<div class="line1"></div>
+
+<h2>Special offers</h2>
+
+<div class="row">
+<div class="span6">
+<div class="thumb4">
+	<div class="thumbnail clearfix">
+		<figure class=""><img src="http://via.placeholder.com/140x138" alt=""></figure>
+		<div class="caption">
+			<h3>Lorem ipsum dones consectetur vorte gurti fablo dolore </h3>
+			<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt  dolore magna. Ipsum dolor sit ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini  <a href="#"><strong>read more</strong></a></p>
+		</div>
+	</div>
+</div>	
+</div>
+<div class="span6">
+<div class="thumb4">
+	<div class="thumbnail clearfix">
+		<figure class=""><img src="http://via.placeholder.com/140x138" alt=""></figure>
+		<div class="caption">
+			<h3>Lorem ipsum dones consectetur vorte gurti fablo dolore </h3>
+			<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt  dolore magna. Ipsum dolor sit ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini  <a href="#"><strong>read more</strong></a></p>
+		</div>
+	</div>
+</div>	
+</div>	
 </div>
 
-<ul class="thumbnails" id="isotope-items">		  
-    <li class="span3 isotope-element isotope-filter1">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte	
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter2">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte		
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter3">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte	
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter1">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter2">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte	
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter3">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter1">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter2">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte	
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter3">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter1">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter2">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    <li class="span3 isotope-element isotope-filter3">
-		<div class="thumb-isotope">
-			<div class="thumbnail clearfix">
-				<a href="images/blank.png">
-					<figure>
-						<img src="http://via.placeholder.com/270x275" alt=""><em></em>
-					</figure>
-					<div class="caption">							
-						lorem ipsun dolore sorte
-					</div>
-				</a>				
-			</div>
-		</div>
-    </li>
-    
-</ul>	
 
 
+<div class="line1"></div>
 
 
 
