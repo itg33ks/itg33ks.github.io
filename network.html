@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Network Administration, Better Network Model for Better Speed</title>
+<title>products</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -17,9 +17,46 @@
 <script type="text/javascript" src="js/superfish.js"></script>
 
 <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 <script>
 $(document).ready(function() {	
-	//
+	//	carouFredSel
+	$('#slider4 .carousel.main ul').carouFredSel({
+		auto: {
+			timeoutDuration: 8000					
+		},
+		responsive: true,
+		prev: '.prev4',
+		next: '.next4',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo"
+		},			
+		items: {
+        	width: '350',
+			height: 'variable',	//	optionally resize item-height			  
+			visible: {
+				min: 1,
+				max: 4
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+	});
+	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+	function updateSizes_vat(){		
+		$('#slider4 .carousel.main ul').trigger("updateSizes");
+	}
+	updateSizes_vat();
+
+
 
 
 
@@ -30,14 +67,17 @@ $(window).load(function() {
 }); //
 </script>		
 <!--[if lt IE 8]>
-		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>  
+		<div style='text-align:center'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
 	<![endif]-->    
 
 <!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>      
+  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
 <![endif]-->
 </head>
+
+<body class="subpage">
+<div id="main">
 
 <body class="subpage">
 <div id="main">
@@ -48,7 +88,7 @@ $(window).load(function() {
 <div class="span12">
 <div class="top1_inner clearfix">
 <div class="top1_inner_bg"></div>
-<header><div class="logo_wrapper"><a href="index.html" class="logo"><img class="llogo" src="pics/logo.png" alt=""></a></div></header>
+<header><div class="logo_wrapper"><a href="index.html" class="logo"><img class="llogo" src="pics\logo.PNG" alt=""></a></div></header>
 <div class="navbar navbar_">
 	<div class="navbar-inner navbar-inner_">
 		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
@@ -59,8 +99,8 @@ $(window).load(function() {
 		<div class="nav-collapse nav-collapse_ collapse">
 			<ul class="nav sf-menu clearfix">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about_us.html">About Us</a></li>
-				<li class="active sub-menu sub-menu-1"><a href="products.html">Products</a>
+      <li ><a href="about-us.html">About Us</a></li>
+				<li class="sub-menu sub-menu-1"><a href="products.html">Products</a>
 					<ul>
 						<li><a href="404.html">404 page not found</a></li>
 						<li class="sub-menu sub-menu-2"><a href="products.html">specials</a>
@@ -107,7 +147,7 @@ $(window).load(function() {
 <div class="container">
 <div class="row">
 <div class="span12">
-<div class="breadcrumbs1_inner"><a href="index.html">home page</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;404</div>	
+<div class="breadcrumbs1_inner"><a href="index.html">home page</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;products</div>	
 </div>	
 </div>	
 </div>	
@@ -116,18 +156,17 @@ $(window).load(function() {
 <div id="content">
 <div class="container">
 <div class="row">
-<div class="span12">
+<div class="span9">
 	
-<h1>Network Administration </h1>	
+<h1>Network administration</h1>
 
-<div class="row">
-	<div class="span7">
-		<div class="page-404">
-			<p class="txt1"></p>
-			<p class="txt2">PAGE FOUND</p>
-		</div>
-	</div>
-	<div class="span5">
+
+<h1>Welcome to IT Geeks<br><span>We are ready to serve any .....</span></h1>
+
+<div class="thumb1">
+	<div class="thumbnail clearfix">
+		<figure class=""><img src="pics\admin.png" alt=""></figure>
+		<div class="caption">
 		<p>
 		Network administration team in it geeks of computer science faculty are responsible for the administration and operation of the computer science's data network, IT Services produce services for the research, teaching, studying, administration and for different interest groups
 		</p>
@@ -141,16 +180,42 @@ $(window).load(function() {
 		</p>
 		<p>
 			Please try using our search box below to look for information on the website
-		</p>
-		<div class="search-form-wrapper clearfix">
-			<form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form clearfix" >
-				<input type="text" name="s" value='Search' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''">
-				<a href="#" onClick="document.getElementById('search-form').submit()"></a>
-			</form>
+		</p>	
+			<a href="#" class="button2">Join us!</a>
 		</div>
 	</div>
 </div>
 
+<!--<div class="line1"></div>
+!-->
+
+
+
+
+
+
+
+
+
+</div>
+<div class="span3">
+
+<h2>Network ITGeeks administration team responsible for</h2>
+
+	<ul class="ul1">
+	  <li><a href="#">Administrate the PcPool of computer Science faculty</a></li>
+	  <li><a href="#">Provide Internet for student who are using internet in the class</a></li>
+	   <li><a href="#">Provide internet for library of computer science</a></li>
+	  <li><a href="#">Hold networking courses for our staff and student of computer science</a></li>
+	  <li><a href="#">Implement new networking model for different networks</a></li>
+	  <li><a href="#"> Helping student to solve their computer problems </a></li>	
+	  <li><a href="#">Working in networking projects</a></li>
+	  	  	            		      	      			      
+	</ul>	
+
+	
+
+	
 </div>	
 </div>	
 </div>	
@@ -161,7 +226,7 @@ $(window).load(function() {
 <div class="row">
 <div class="span12">
 <div id="slider4">
-<div class="slider4-title">IT Geeks Courses</div>
+<div class="slider4-title">best products</div>
 <div class="slider4_wrapper2">
 <a class="prev4" href="#"></a>
 <a class="next4" href="#"></a>
@@ -177,8 +242,8 @@ $(window).load(function() {
 									<img src="http://via.placeholder.com/277x214" alt="">
 								</figure>
 								<div class="caption">
-									<div class="txt1">CCNA</div>
-									<div class="txt2">Routing and switching course.</div>								
+									<div class="txt1">Lorem ipsum dolor</div>
+									<div class="txt2">dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>								
 								</div>								
 							</a>								
 						</div>
@@ -192,8 +257,8 @@ $(window).load(function() {
 									<img src="http://via.placeholder.com/277x214" alt="">
 								</figure>
 								<div class="caption">
-									<div class="txt1">Linux Operating system </div>
-									<div class="txt2">Fundamental of open source operating systems, and shell scripting language.</div>								
+									<div class="txt1">Lorem ipsum dolor</div>
+									<div class="txt2">dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>								
 								</div>								
 							</a>								
 						</div>
@@ -207,13 +272,88 @@ $(window).load(function() {
 									<img src="http://via.placeholder.com/277x214" alt="">
 								</figure>
 								<div class="caption">
-									<div class="txt1">MTCNA</div>
-									<div class="txt2">MikroTik course.</div>								
+									<div class="txt1">Lorem ipsum dolor</div>
+									<div class="txt2">dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>								
 								</div>								
 							</a>								
 						</div>
 					</div>
-				</li>																					
+				</li>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="http://via.placeholder.com/277x214" alt="">
+								</figure>
+								<div class="caption">
+									<div class="txt1">Lorem ipsum dolor</div>
+									<div class="txt2">dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>								
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="http://via.placeholder.com/277x214" alt="">
+								</figure>
+								<div class="caption">
+									<div class="txt1">Lorem ipsum dolor</div>
+									<div class="txt2">dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>								
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="http://via.placeholder.com/277x214" alt="">
+								</figure>
+								<div class="caption">
+									<div class="txt1">Lorem ipsum dolor</div>
+									<div class="txt2">dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>								
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="http://via.placeholder.com/277x214" alt="">
+								</figure>
+								<div class="caption">
+									<div class="txt1">Lorem ipsum dolor</div>
+									<div class="txt2">dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>								
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<figure>
+									<img src="http://via.placeholder.com/277x214" alt="">
+								</figure>
+								<div class="caption">
+									<div class="txt1">Lorem ipsum dolor</div>
+									<div class="txt2">dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>								
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>																								
 			</ul>
 		</div>
 	</div>
@@ -225,8 +365,6 @@ $(window).load(function() {
 </div>	
 </div>
 
-
-
 <div class="slogan1">
 <div class="container">
 <div class="row">
@@ -235,8 +373,8 @@ $(window).load(function() {
 <div class="row">
 <div class="span8">
 <div class="block1">
-	<div class="txt1">Have Questions? <span>Call uS: 93 792 660 006</span></div>
-	<div class="txt2">IT GEEKS ARE ALWAYS AT THE SERVICE OF STUDENTS, AND IN CASE OF ANY PROBLEMS, WE ARE READY TO SERVE</div>
+	<div class="txt1">Have Questions? <span>Call uS: +93-792660006</span></div>
+	<div class="txt2">IT GEEKS ARE ALWAYS AT THE SERVICE OF STUDENTS, AND IN CASE OF ANY PROBLEMS, WE ARE READY TO SERVE.</div>
 </div>	
 </div>
 <div class="span4">
@@ -262,7 +400,7 @@ $(window).load(function() {
 <div class="block3">
 <div class="social_wrapper">
 	<ul class="social clearfix">
-	    <li><a href="https://www.facebook.com/csg33ks/"><img src="images/social_ic1.png"></a></li>
+	    <li><a href="https://www.facebook.com/csitg33ks/"><img src="images/social_ic1.png"></a></li>
 	    <li><a href="#"><img src="images/social_ic2.png"></a></li>
 	    <li><a href="#"><img src="images/social_ic3.png"></a></li>
 	    <li><a href="#"><img src="images/social_ic4.png"></a></li>
@@ -284,15 +422,15 @@ $(window).load(function() {
 <div class="row">
 <div class="span3">
 
-	<div class="block_title">information</div>
+	<div class="block_title"> information</div>
 
 	<ul class="ul0">
-	  <li><a href="#">..........</a></li>
-	  <li><a href="#">..........</a></li>
-	  <li><a href="#">..........</a></li>
-	  <li><a href="#">..........</a></li>
-	  <li><a href="#">..........</a></li>	                                                                                
-	  <li><a href="#">..........</a></li>	                                                                                
+	  <li><a href="#"> .........</a></li>
+	  <li><a href="#"> .........</a></li>
+	  <li><a href="#"> .........</a></li>
+	  <li><a href="#"> .........</a></li>
+	  <li><a href="#"> .........</a></li>	                                                                                
+	  <li><a href="#"> .........</a></li>	                                                                                
 	</ul>
 
 </div>
@@ -304,7 +442,7 @@ $(window).load(function() {
 	  <li><a href="#">Educational services</a></li>
 	  <li><a href="#">Courses</a></li>
 	  <li><a href="network.html">IT Administration</a></li>
-	  <li><a href="#">Our Products</a></li	   ></ul>                                                                                	  
+	  <li><a href="#">Our Products</a></li>	                                                                                	  
 	</ul>
 
 </div>
@@ -313,11 +451,11 @@ $(window).load(function() {
 	<div class="block_title">downloads</div>
 
 	<ul class="ul0">
+	  <li><a href="#">Course Slides</a></li>
 	  <li><a href="#">..........</a></li>
 	  <li><a href="#">..........</a></li>
 	  <li><a href="#">..........</a></li>
-	  <li><a href="#">..........</a></li>
-	  <li><a href="#">..........</a></li>
+	  <li><a href="#">...........</a></li>	
 	</ul>
 
 </div>
@@ -327,19 +465,19 @@ $(window).load(function() {
 
 	<div class="phone1">
 		<div class="txt1">Have Questions? Call Us:</div>
-		<div class="txt2">+93 792 660 006</div>
+		<div class="txt2">+93-792660006</div>
 	</div>
 
 	<ul class="ul0">
-	  	  <li><a href="#">Our Location</a></li>
-	 <li>Afghanistan, Herat city, Herat University, Computer Science faculty,ITGeek center</li>
+	  <li><a href="#">Our Location</a></li>
+	  <li>Afghanistan, Herat city, Herat University, Computer Science faculty,ITGeek center</li>
 	  <li><a href="#">Find an Agent</a></li>	                                                                                  
 	</ul>
 
 </div>	
 </div>
 	<footer>
-		<div class="copyright"><a href="#">Privacy policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://gridgum.com/themes/category/free/">Free Bootstrap Themes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copyright © 2017. All rights reserved</div>
+		<div class="copyright"><a href="#">Privacy policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;www.ItGeek.com&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copyright © 2018. All rights reserved</div>
 	</footer>
 </div>	
 </div>	
